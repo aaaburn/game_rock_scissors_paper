@@ -12,7 +12,7 @@ u = ["\033[4m", "\033[24m"] # underline formatting
 
 
 
-
+# Player move
 player_move = input("Choose [r]ock, [p]aper or [s]cissors: ")
 
 if player_move.lower() == "r" or player_move == '1':
@@ -24,6 +24,8 @@ elif player_move.lower() == "s" or player_move == '3':
 else:
     raise SystemExit("Invalid input. Try again...")
 
+
+# Computer move - version 1)
 computer_random_number = random.randint(1, 3)
 computer_move = ""
 if computer_random_number == 1:
@@ -32,6 +34,12 @@ elif computer_random_number == 2:
     computer_move = paper
 else:
     computer_move = scissors
+
+# # Computer move - version 2)
+# possible_moves = ["rock", "paper", "scissors"]
+# computer_move = random.choice(possible_moves)
+
+
 
 
 print(Fore.BLUE + f"{i[0]}The computer chose {computer_move}.{i[1]}")
