@@ -36,7 +36,7 @@ else:
     computer_move = scissors
 
 # # Computer move - version 2)
-# possible_moves = ["rock", "paper", "scissors"]
+# possible_moves = [rock, paper, scissors]
 # computer_move = random.choice(possible_moves)
 
 
